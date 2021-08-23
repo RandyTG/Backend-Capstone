@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
-//app.use("theaters", theatersRouter);
+app.use("/theaters", theatersRouter);
 
 app.use(notFound);
 app.use(errorHandler);
