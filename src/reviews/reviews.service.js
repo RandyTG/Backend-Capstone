@@ -1,11 +1,5 @@
 const knex = require("../db/connection");
-const mapProperties = require("../utils/map-properties");
-
-const addCritic = mapProperties({
-  preferred_name: "critic.preferred_name",
-  surname: "critic.surname",
-  organization_name: "critic.organization_name",
-});
+const addCritic = require("../utils/add-critic");
 
 function read(reviewId) {
   return knex("reviews").select("*").where({ review_id: reviewId }).first();
