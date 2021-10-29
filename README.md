@@ -11,12 +11,10 @@ Server API for managing we love movies movies, theaters, and review data.
 
 ###Built With:
 * Node.js
- * Express server framework
- * CORS for safer request headers
-   
+   * Express server framework
+   * CORS for safer request headers  
 * PostgreSQL database
- * Knex.js for query building
-   
+   * Knex.js for query building  
 * Testing on Mocha framework using Chai and Supertest
 
 ##API Documentation
