@@ -9,7 +9,7 @@ Server API for managing we love movies movies, theaters, and review data.
 
 ##Technology
 
-###Built With:
+###Built With
 *Node.js
   *Express server framework
   *CORS for safer request headers
