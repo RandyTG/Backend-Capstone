@@ -24,13 +24,24 @@ All post requests require application/json body, and return JSON response.
 
 ### Endpoints for data entries:
 
-**Get Movies** 
+**GET Movies:** 
 * `GET /api/movies`
-    * returns an array of objects containing all of the movies by default.
+    * Returns an array of objects containing all of the movies by default.
     * Adding query parameter `is_showing=(true/false)` will return the movies currently showing in theaters or those that aren't.
     * Adding URL parameter `/:movie_id` will return the movie with the corresponding ID or an error if none is found.
 * `GET/api/movies/:movie_id/theaters`
     * Returns the theaters associated to the specific movie.
 * `GET/api/movies/:movie_id/reviews`
-    * Returns the reviews associated to the specific movie.
+    * Returns the reviews with their critics associated to the specific movie.
 
+**GET Theaters:** `GET /api/theaters`
+* Returns a list of theaters with their respective movies that are currently showing.
+
+### Enpoints for data Management:
+
+**PUT Reviews:** `PUT /api/reviews/:review_id
+* Updated the review given review ID.
+* JSON response incliding the critics information with updated review is returned
+
+**DELETE Reviews:** `DELETE /api/reviewa/:review_id`
+* Deletes corresponding review if it exists
