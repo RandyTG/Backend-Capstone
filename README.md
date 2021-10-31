@@ -44,7 +44,7 @@ All post requests require application/json body, and return JSON response.
 **GET Theaters:** `GET /api/theaters`
 * Returns a list of theaters with their respective movies that are currently showing.
 
-### Enpoints for data Management:
+### Enpoints for data management:
 
 **PUT Reviews:** `PUT /api/reviews/:review_id`
 * Updated the review given review ID.
