@@ -32,5 +32,5 @@ All post requests require application/json body, and return JSON response.
 * `GET/api/movies/:movie_id/theaters`
     * Returns the theaters associated to the specific movie.
 * `GET/api/movies/:movie_id/reviews`
-    *
+    * Returns the reviews associated to the specific movie.
 
