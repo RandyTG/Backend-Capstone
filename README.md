@@ -17,6 +17,13 @@ Server API for managing we love movies movies, theaters, and review data.
    * Knex.js for query building  
 * Testing on Mocha framework using Chai and Supertest
 
+## Installation
+
+1. Run `npm install` to install project dependencies.
+1. Run `npm run start:dev` to start your server in development mode.
+
+The deafult server locations will be `http://localhost:5000`.
+
 ## API Documentation
 
 All get requests return JSON response.
@@ -39,7 +46,7 @@ All post requests require application/json body, and return JSON response.
 
 ### Enpoints for data Management:
 
-**PUT Reviews:** `PUT /api/reviews/:review_id
+**PUT Reviews:** `PUT /api/reviews/:review_id`
 * Updated the review given review ID.
 * JSON response incliding the critics information with updated review is returned
 
