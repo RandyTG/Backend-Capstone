@@ -51,4 +51,4 @@ All post requests require application/json body, and return JSON response.
 * JSON response incliding the critics information with updated review is returned
 
 **DELETE Reviews:** `DELETE /api/reviewa/:review_id`
-* Deletes corresponding review if it exists
+* Deletes corresponding review if it exist
